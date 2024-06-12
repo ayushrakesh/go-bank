@@ -7,4 +7,7 @@ migrateup:
 migratedown:
 	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose down
 
+sqlc:
+	sqlc generate
+
 .PHONY: postgres migrateup migratedown

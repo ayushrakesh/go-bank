@@ -24,7 +24,7 @@ CREATE TABLE "transfers" (
 CREATE INDEX ON "accounts" ("owner");
 
 CREATE INDEX ON "entries" ("account_id");
-
+ 
 CREATE INDEX ON "transfers" ("from_account_id");
 
 CREATE INDEX ON "transfers" ("to_account_id");
