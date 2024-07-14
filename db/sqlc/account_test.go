@@ -40,7 +40,6 @@ func TestGetAccount(t *testing.T) {
 	acc2, err := testQueries.GetAccount(context.Background(), acc1.ID)
 
 	require.NoError(t, err)
-
 	require.NotZero(t, acc2)
 
 	require.Equal(t, acc1.ID, acc2.ID)
@@ -61,7 +60,6 @@ func TestUpdateAccount(t *testing.T) {
 	acc2, err := testQueries.UpdateAccount(context.Background(), ar)
 
 	require.NoError(t, err)
-
 	require.NotZero(t, acc2)
 
 	require.Equal(t, acc1.ID, acc2.ID)

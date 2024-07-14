@@ -13,4 +13,4 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-.PHONY: postgres migrateup migratedown test
+.PHONY: postgres migrateup migratedown sqlc test
