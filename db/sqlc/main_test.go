@@ -6,21 +6,22 @@ import (
 	"os"
 	"testing"
 
+	"github.com/ayushrakesh/go-bank/util"
 	_ "github.com/lib/pq"
-)
-
-const (
-	dbDriver = "postgres"
-	dbSource = "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable"
 )
 
 var testQueries *Queries
 var testDB *sql.DB
 
 func TestMain(m *testing.M) {
-	var err error
 
-	testDB, err = sql.Open(dbDriver, dbSource)
+	var err error
+	config, errr := util.LoadConfig("../..")
+	if errr != nil {
+		log.Fatal("cannot load config", err)
+	}
+
+	testDB, err = sql.Open(config.DBDriver, config.DBSource)
 	if err != nil {
 		log.Fatal("Error connecting database")
 	}
