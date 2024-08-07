@@ -6,11 +6,17 @@ import (
 
 	"github.com/ayushrakesh/go-bank/api"
 	db "github.com/ayushrakesh/go-bank/db/sqlc"
+	"github.com/ayushrakesh/go-bank/util"
 	_ "github.com/lib/pq"
 )
 
 func main() {
-	testDB, err := sql.Open("postgres", "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable")
+	config, err := util.LoadConfig(".")
+	if err != nil {
+		log.Fatal("couldnt load config", err)
+	}
+
+	testDB, err := sql.Open(config.DBDriver, config.DBSource)
 	if err != nil {
 		log.Fatal("Error connecting database")
 	}
@@ -19,7 +25,7 @@ func main() {
 
 	server := api.NewServer(store)
 
-	err = server.Start("0.0.0.0:8080")
+	err = server.Start(config.ServerAddress)
 	if err != nil {
 		log.Fatal("cannot start server!", err)
 	}
