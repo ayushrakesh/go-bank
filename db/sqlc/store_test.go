@@ -141,7 +141,6 @@ func TestTransferTxDeadlock(t *testing.T) {
 	for i := 0; i < n; i++ {
 		err := <-errCh
 		require.NoError(t, err)
-
 	}
 
 	checkAccount1, err := testQueries.GetAccount(context.Background(), account1.ID)
