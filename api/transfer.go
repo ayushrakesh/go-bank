@@ -33,19 +33,19 @@ func (server *Server) createTransfer(ctx *gin.Context) {
 		return
 	}
 
-	arg := db.CreateTransferParams{
+	arg := db.TransferTxParams{
 		FromAccountID: req.FromAccountID,
 		ToAccountID:   req.ToAccountID,
 		Amount:        req.Amount,
 	}
 
-	transfer, err := server.store.CreateTransfer(ctx, arg)
+	result, err := server.store.TransferTx(ctx, arg)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return
 	}
 
-	ctx.JSON(http.StatusOK, transfer)
+	ctx.JSON(http.StatusOK, result)
 }
 
 func (server *Server) validateAccount(ctx *gin.Context, id int64, currency string) bool {
