@@ -2,7 +2,7 @@ postgres:
 	docker run --name postgres16 --network bank-network -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -d postgres
 
 migrateup:
-	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose up 
+	migrate -path db/migrations -database "postgres://postgres:6Wi9N3ucDgJK8tXT4gdq@go-bank.c7cia4imqgo7.ap-south-1.rds.amazonaws.com:5432/bank" -verbose up 
 
 migrateup1:
 	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose up 1
