@@ -8,7 +8,7 @@ migrateup1:
 	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose up 1
 
 migratedown:
-	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose down
+	migrate -path db/migrations -database "postgres://postgres:6Wi9N3ucDgJK8tXT4gdq@go-bank.c7cia4imqgo7.ap-south-1.rds.amazonaws.com:5432/bank" -verbose down
 
 migratedown1:
 	migrate -path db/migrations -database "postgres://postgres:postgres@localhost:5432/bank?sslmode=disable" -verbose down 1
