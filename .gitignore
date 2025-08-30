@@ -1,0 +1,25 @@
+# Go binaries and compiled object files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go module cache
+/pkg/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Environment variables file
+app.env
+
+# Test output
+*.test
+*.out
+
+# Docker ignore
+.dockerignore
+
+# Binary for main application
+main
