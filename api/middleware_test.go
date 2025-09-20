@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ayushrakesh/go-bank/token"
+	"github.com/ayushrakesh/gopay/token"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

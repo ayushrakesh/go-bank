@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	db "github.com/ayushrakesh/go-bank/db/sqlc"
-	"github.com/ayushrakesh/go-bank/util"
+	db "github.com/ayushrakesh/gopay/db/sqlc"
+	"github.com/ayushrakesh/gopay/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 )

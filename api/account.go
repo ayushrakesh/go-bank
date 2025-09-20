@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/ayushrakesh/go-bank/token"
+	"github.com/ayushrakesh/gopay/token"
 
-	db "github.com/ayushrakesh/go-bank/db/sqlc"
+	db "github.com/ayushrakesh/gopay/db/sqlc"
 	"github.com/gin-gonic/gin"
 	"github.com/lib/pq"
 )

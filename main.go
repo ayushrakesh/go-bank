@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/ayushrakesh/go-bank/api"
-	db "github.com/ayushrakesh/go-bank/db/sqlc"
-	"github.com/ayushrakesh/go-bank/util"
+	"github.com/ayushrakesh/gopay/api"
+	db "github.com/ayushrakesh/gopay/db/sqlc"
+	"github.com/ayushrakesh/gopay/util"
 	_ "github.com/lib/pq"
 )
 

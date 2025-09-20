@@ -11,9 +11,9 @@ import (
 	"reflect"
 	"testing"
 
-	mockdb "github.com/ayushrakesh/go-bank/db/mock"
-	db "github.com/ayushrakesh/go-bank/db/sqlc"
-	"github.com/ayushrakesh/go-bank/util"
+	mockdb "github.com/ayushrakesh/gopay/db/mock"
+	db "github.com/ayushrakesh/gopay/db/sqlc"
+	"github.com/ayushrakesh/gopay/util"
 	"github.com/gin-gonic/gin"
 	"github.com/golang/mock/gomock"
 	"github.com/lib/pq"

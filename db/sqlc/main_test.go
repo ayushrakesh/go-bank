@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ayushrakesh/go-bank/util"
+	"github.com/ayushrakesh/gopay/util"
 	_ "github.com/lib/pq"
 )
 

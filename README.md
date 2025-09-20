@@ -1,4 +1,4 @@
-# Go Bank - A Simple Banking API
+# GoPay: Dockerized Banking API with Transaction Safety
 
 This project implements a simple banking API using Go, Gin-Gonic for the web framework, PostgreSQL as the database, and `sqlc` for type-safe SQL queries. It provides functionalities for managing user accounts, recording entries, and facilitating money transfers. Authentication is handled using PASETO tokens.
 
@@ -32,13 +32,13 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Getting Started
 
-Follow these steps to set up and run the Go Bank project from scratch.
+Follow these steps to set up and run the GoPay project from scratch.
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ayushrakesh/go-bank.git
-cd go-bank
+git clone https://github.com/ayushrakesh/gopay.git
+cd gopay
 ```
 
 ### 2. Environment Variables (`app.env`)
@@ -110,7 +110,7 @@ This method uses Docker Compose to set up both the PostgreSQL database and the G
 
 1.  **Ensure Docker is installed**: Make sure you have [Docker and Docker Compose](https://www.docker.com/products/docker-desktop/) installed on your system.
 
-2.  **Navigate to Project Root**: Open your terminal in the root directory of the `go-bank` project.
+2.  **Navigate to Project Root**: Open your terminal in the root directory of the `gopay` project.
 
 3.  **Build and Run**: Execute the following command to build the Docker images and start the services:
     ```bash

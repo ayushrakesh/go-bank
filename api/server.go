@@ -3,10 +3,10 @@ package api
 import (
 	"fmt"
 
-	"github.com/ayushrakesh/go-bank/token"
+	"github.com/ayushrakesh/gopay/token"
 
-	db "github.com/ayushrakesh/go-bank/db/sqlc"
-	"github.com/ayushrakesh/go-bank/util"
+	db "github.com/ayushrakesh/gopay/db/sqlc"
+	"github.com/ayushrakesh/gopay/util"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"github.com/go-playground/validator/v10"
